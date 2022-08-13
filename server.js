@@ -11,9 +11,6 @@ const connect = async () => {
     console.log('requesting tunnel...')
     const url = await ngrok.connect(options)
     console.log(`url: ${url}`)
-    const prsUrl = parseUrl(url)
-    console.log(`the command we should paste into cli`)
-    console.log(prsUrl)
 }
 
 disconnect = async () =>  {
